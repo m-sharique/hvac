@@ -81,7 +81,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="home.php">
+    <a class="navbar-brand" href="index.php">
       <img src="./images/logo.png" alt="EliteBreeze Logo" width="100">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +90,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link p-3" href="home.php">Home</a>
+          <a class="nav-link p-3" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link p-3" href="aboutus.php">About Us</a>
