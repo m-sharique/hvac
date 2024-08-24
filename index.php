@@ -1,69 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EliteBreeze | Home</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .grid-container .button {
-            margin: 5px;
-            width: 100%;
-        }
-        .logo img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .boxcontainer {
-            margin-bottom: 20px;
-        }
-        .gallery {
-            margin: 10px 0;
-            text-align: center;
-        }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .desc {
-            font-size: 1.1em;
-            text-align: left;
-        }
-        .contact p {
-            margin: 0;
-        }
-        .social-links a {
-            margin-right: 10px;
-            color: #333;
-            font-size: 1.5em;
-        }
-        .social-links a:hover {
-            color: #007bff;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f8f9fa;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EliteBreeze | Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .grid-container .button {
+      margin: 5px;
+      width: 100%;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .boxcontainer {
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 1.1em;
+      text-align: left;
+    }
+
+    .contact p {
+      margin: 0;
+    }
+
+    .social-links a {
+      margin-right: 10px;
+      color: #333;
+      font-size: 1.5em;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f8f9fa;
+      margin-top: 30px;
+    }
+
+    .carousel {
+      margin: 10px auto;
+      max-width: 80vw;
+      max-height: 80vh;
+      border-radius: 10px;
+      /* object-fit: cover; */
+    }
+
+    @media screen and (max-width: 768px) {
+      .carousel {
+        min-width: 100vw;
+      }
+      .carousel-item img {
+      max-width: 100vw;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: transparent;
+      border: 0;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      max-width: 80vw;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
     <a class="navbar-brand" href="index.php">
       <img src="./images/logo.png" alt="EliteBreeze Logo" width="100">
     </a>
@@ -71,7 +121,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link p-3" href="index.php">Home</a>
         </li>
@@ -91,27 +141,40 @@
     </div>
   </nav>
 
-  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <?php
+      $images = array(
+        "tim-mossholder-HdIgbf03tko-unsplash.jpg",
+        "alexandre-lecocq-ePghIEczhnI-unsplash.jpg",
+        "drew-coffman-KdWSqrKt4Cc-unsplash.jpg",
+        "elimende-inagella-zx7VUt9txos-unsplash.jpg",
+        "everett-pachmann-JsPkVrHMQoo-unsplash.jpg",
+        "kyle-nieber-LdVZ14861qE-unsplash.jpg",
+        "lukas-lehotsky-PqwymeR2OH0-unsplash.jpg",
+        "meritt-thomas-0YhmNx1Q96I-unsplash.jpg",
+        "phill-brown-l1yw6XNfERw-unsplash.jpg"
+      );
+      foreach ($images as $key => $image) {
+        if ($key == 0) {
+          echo '<div class="carousel-item active">';
+        } else {
+          echo '<div class="carousel-item">';
+        }
+        echo '<img src="./images/carousel/' . $image . '" class="d-block w-100" alt="...">';
+        echo '</div>';
+      }
+      ?>
     </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
   <hr class="my-4">
 
@@ -185,10 +248,10 @@
       <p><b>Email us:</b> <a href="mailto:musab.elitebreeze@gmail.com" class="email-link">musab.elitebreeze@gmail.com</a></p>
       <p><b>Location:</b> Serving Thane and Mumbai</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/elitebreeze.mumbai?igsh=MWZmcnd4emJ1NWt2Nw==" target="_blank" title="Instagram">
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/elitebreeze.mumbai?igsh=MWZmcnd4emJ1NWt2Nw==" target="_blank" title="Instagram" rel="noopener"></a>
+        <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.linkedin.com/company/elitebreezehvac/" target="_blank">
+        <a href="https://www.linkedin.com/company/elitebreezehvac/" target="_blank" rel="noopener">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
@@ -199,18 +262,15 @@
     <p>&copy; 2024 EliteBreeze</p>
     <p><a href="mailto:musab.elitebreeze@gmail.com">Contact Us</a></p>
     <p>Follow us on:
-      <a href="https://www.instagram.com/elitebreeze.mumbai?igsh=MWZmcnd4emJ1NWt2Nw==" target="_blank">
-        <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/elitebreeze.mumbai?igsh=MWZmcnd4emJ1NWt2Nw==" target="_blank" rel="noopener" title="Instagram"></a>
+      <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.linkedin.com/company/elitebreezehvac/" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
+      <a href="https://www.linkedin.com/company/elitebreezehvac/" target="_blank" rel="noopener" title="Visit our LinkedIn page"></a>
+      <i class="fab fa-linkedin-in"></i>
       </a>
     </p>
   </footer>
 
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
