@@ -26,7 +26,7 @@
     }
   },
   "routes": [
-    { "src": "/images/(.*)", "dest": "/images/$1" },
+    { "src": "images/(.*)", "dest": "/images/$1" },
     { "src": "/aboutus", "dest": "/api/aboutus.php" },
     { "src": "/blogs", "dest": "/api/blogs.php" },
     { "src": "/contact", "dest": "/api/contact.php" },
