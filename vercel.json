@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/aboutus.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/blogs.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/contact.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/contactus.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/process_contact.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/process_quote.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/services.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    { "src": "images/(.*)", "dest": "/images/$1" },
+    { "src": "/aboutus", "dest": "/api/aboutus.php" },
+    { "src": "/blogs", "dest": "/api/blogs.php" },
+    { "src": "/contact", "dest": "/api/contact.php" },
+    { "src": "/contactus", "dest": "/api/contactus.php" },
+    { "src": "/process_contact", "dest": "/api/process_contact.php" },
+    { "src": "/process_quote", "dest": "/api/process_quote.php" },
+    { "src": "/services", "dest": "/api/services.php" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
+}
