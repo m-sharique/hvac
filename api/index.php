@@ -115,7 +115,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
     <a class="navbar-brand" href="index.php">
-      <img src="./images/logo.png" alt="EliteBreeze Logo" width="100">
+      <img src=".\public\images\logo.png" alt="EliteBreeze Logo" width="100">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -126,7 +126,7 @@
           <a class="nav-link p-3" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-3" href="aboutus.php">About Us</a>
+          <a class="nav-link p-3" href="/aboutus">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link p-3" href="services.php">Services</a>
@@ -145,15 +145,14 @@
     <div class="carousel-inner">
       <?php
       $images = array(
-        "tim-mossholder-HdIgbf03tko-unsplash.jpg",
-        "alexandre-lecocq-ePghIEczhnI-unsplash.jpg",
-        "drew-coffman-KdWSqrKt4Cc-unsplash.jpg",
-        "elimende-inagella-zx7VUt9txos-unsplash.jpg",
-        "everett-pachmann-JsPkVrHMQoo-unsplash.jpg",
-        "kyle-nieber-LdVZ14861qE-unsplash.jpg",
-        "lukas-lehotsky-PqwymeR2OH0-unsplash.jpg",
-        "meritt-thomas-0YhmNx1Q96I-unsplash.jpg",
-        "phill-brown-l1yw6XNfERw-unsplash.jpg"
+        "https://images.unsplash.com/photo-1545280405-f06710f1779d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1558919047-80f932b017cf?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1614447413576-b346c641c128?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1718203862467-c33159fdc504?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1522683845419-f46a59d0de42?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1634114581640-9a1734fae3e5?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1572081790780-1a7739896259?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1704022632400-79aab2ddb9f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       );
       foreach ($images as $key => $image) {
         if ($key == 0) {
@@ -161,13 +160,10 @@
         } else {
           echo '<div class="carousel-item">';
         }
-        echo '<img src="./images/carousel/' . $image . '" class="d-block w-100" alt="...">';
+        echo '<img src="' . $image . '" class="d-block w-100" alt="...">';
         echo '</div>';
       }
       ?>
-      <div class="carousel-item active">
-        <img src="https://images.unsplash.com/photo-1545280405-f06710f1779d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
