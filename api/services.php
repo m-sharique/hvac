@@ -26,7 +26,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php">
+    <a class="navbar-brand" href="/index">
       <img src="./images/logo.png" alt="EliteBreeze Logo" width="100">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,19 +35,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link p-3" href="index.php">Home</a>
+          <a class="nav-link p-3" href="/index">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-3" href="aboutus.php">About Us</a>
+          <a class="nav-link p-3" href="/aboutus">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-3" href="services.php">Services</a>
+          <a class="nav-link p-3" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-3" href="blogs.php">Blogs</a>
+          <a class="nav-link p-3" href="/blogs">Blogs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link p-3" href="contact.php">Contact Us</a>
+          <a class="nav-link p-3" href="/contact">Contact Us</a>
         </li>
       </ul>
     </div>

@@ -94,7 +94,7 @@
             echo "<p>Your request could not be processed. Please try again.</p>";
         }
         ?>
-        <a href="contact.php">Go Back to Contact Page</a>
+        <a href="/contact">Go Back to Contact Page</a>
     </div>
 
 </body>
